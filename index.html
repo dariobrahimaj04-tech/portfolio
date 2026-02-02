@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skyway Parking | Airport Parking Reservations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <div class="logo">Skyway Parking</div>
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#how-it-works">How it Works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact" class="button ghost">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Reserve airport parking in minutes</p>
+          <h1>
+            Stress-free airport parking with secure, affordable, and on-time shuttle
+            service.
+          </h1>
+          <p class="subhead">
+            Skyway Parking keeps your trip smooth with guaranteed space, 24/7 lot
+            security, and real-time shuttle tracking from curb to terminal.
+          </p>
+          <div class="hero-actions">
+            <a href="#reservation" class="button">Book a Space</a>
+            <a href="#how-it-works" class="button ghost">Learn More</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <h3>2.4M+</h3>
+              <p>cars parked safely</p>
+            </div>
+            <div>
+              <h3>7 min</h3>
+              <p>avg shuttle wait</p>
+            </div>
+            <div>
+              <h3>24/7</h3>
+              <p>monitored lots</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card" id="reservation">
+          <h2>Reserve your spot</h2>
+          <p>Save your space and lock in the best rate.</p>
+          <form class="reservation-form">
+            <label>
+              Airport
+              <select name="airport" required>
+                <option value="">Select airport</option>
+                <option>JFK International</option>
+                <option>Los Angeles (LAX)</option>
+                <option>Chicago O'Hare</option>
+                <option>Dallas Love Field</option>
+              </select>
+            </label>
+            <div class="form-row">
+              <label>
+                Drop-off
+                <input type="date" name="dropoff" required />
+              </label>
+              <label>
+                Time
+                <input type="time" name="dropoff-time" required />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Pick-up
+                <input type="date" name="pickup" required />
+              </label>
+              <label>
+                Time
+                <input type="time" name="pickup-time" required />
+              </label>
+            </div>
+            <label>
+              Vehicle type
+              <select name="vehicle" required>
+                <option value="">Select vehicle</option>
+                <option>Compact / Sedan</option>
+                <option>SUV / Van</option>
+                <option>Truck</option>
+              </select>
+            </label>
+            <button type="submit" class="button full">Check Availability</button>
+            <p class="form-footnote">
+              Need help? Call <strong>(800) 555-2024</strong>
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section class="trust">
+        <p>Trusted by travelers and airport partners nationwide</p>
+        <div class="trust-logos">
+          <span>Skyline Air</span>
+          <span>Metro Airport</span>
+          <span>Voyage Rewards</span>
+          <span>BlueJet</span>
+          <span>Cloud Nine Hotels</span>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <div class="section-heading">
+          <p class="eyebrow">Full-service care</p>
+          <h2>More than just a parking spot.</h2>
+          <p>
+            From valet assistance to electric charging, Skyway Parking keeps your
+            vehicle protected and ready for your return.
+          </p>
+        </div>
+        <div class="service-grid">
+          <article>
+            <h3>Covered & open-air lots</h3>
+            <p>
+              Choose covered parking for premium protection or open-air spaces
+              close to the shuttle hub.
+            </p>
+          </article>
+          <article>
+            <h3>On-demand shuttles</h3>
+            <p>
+              Continuous shuttles run every 7 minutes with dedicated luggage
+              assistance at each stop.
+            </p>
+          </article>
+          <article>
+            <h3>Real-time alerts</h3>
+            <p>
+              Get SMS updates when your shuttle is arriving and when your vehicle
+              is ready for pickup.
+            </p>
+          </article>
+          <article>
+            <h3>24/7 security</h3>
+            <p>
+              License plate recognition, gated entry, and live security teams
+              monitor the lot at all hours.
+            </p>
+          </article>
+          <article>
+            <h3>EV charging</h3>
+            <p>
+              Reserve a charging bay so your electric vehicle is fully powered
+              when you land.
+            </p>
+          </article>
+          <article>
+            <h3>Detailing add-ons</h3>
+            <p>
+              Select a quick wash or full detail package while you are away.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="steps">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2>Park, fly, and return in three simple steps.</h2>
+        </div>
+        <div class="step-grid">
+          <div>
+            <span>1</span>
+            <h3>Reserve online</h3>
+            <p>
+              Lock in your space, choose your lot, and add optional services in
+              under two minutes.
+            </p>
+          </div>
+          <div>
+            <span>2</span>
+            <h3>Check in curbside</h3>
+            <p>
+              Scan the QR code at entry. Our team loads your bags and sends you on
+              the next shuttle.
+            </p>
+          </div>
+          <div>
+            <span>3</span>
+            <h3>Return with ease</h3>
+            <p>
+              Text “ARRIVED” to trigger pickup. We have your car ready when you
+              arrive back.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing">
+        <div class="section-heading">
+          <p class="eyebrow">Flexible pricing</p>
+          <h2>Plans for every traveler.</h2>
+          <p>Save more when you prepay and choose the perfect level of care.</p>
+        </div>
+        <div class="pricing-grid">
+          <article>
+            <h3>Economy</h3>
+            <p class="price">$9<span>/day</span></p>
+            <ul>
+              <li>Outdoor lot space</li>
+              <li>Shuttle every 10 minutes</li>
+              <li>24/7 surveillance</li>
+            </ul>
+            <button class="button ghost">Choose Economy</button>
+          </article>
+          <article class="featured">
+            <p class="tag">Most Popular</p>
+            <h3>Premium</h3>
+            <p class="price">$15<span>/day</span></p>
+            <ul>
+              <li>Covered parking</li>
+              <li>Shuttle every 7 minutes</li>
+              <li>Priority return pickup</li>
+              <li>Battery jump service</li>
+            </ul>
+            <button class="button">Choose Premium</button>
+          </article>
+          <article>
+            <h3>Elite Valet</h3>
+            <p class="price">$24<span>/day</span></p>
+            <ul>
+              <li>Curbside valet drop-off</li>
+              <li>Guaranteed premium space</li>
+              <li>Complimentary wash</li>
+              <li>EV charging included</li>
+            </ul>
+            <button class="button ghost">Choose Elite</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews">
+        <div class="section-heading">
+          <p class="eyebrow">Traveler reviews</p>
+          <h2>Consistently rated 4.9/5 stars.</h2>
+        </div>
+        <div class="review-grid">
+          <blockquote>
+            <p>
+              “The shuttle tracked my flight delay and still had a driver waiting.
+              The process was seamless.”
+            </p>
+            <cite>— Maya L., Boston</cite>
+          </blockquote>
+          <blockquote>
+            <p>
+              “I loved the security updates and the curbside valet. Skyway is now
+              my go-to.”
+            </p>
+            <cite>— Chris D., Seattle</cite>
+          </blockquote>
+          <blockquote>
+            <p>
+              “Easy booking, friendly team, and I returned to a fully charged EV.
+              Highly recommend!”
+            </p>
+            <cite>— Amina R., San Diego</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Need assistance?</p>
+            <h2>We are here 24/7 for your travel plans.</h2>
+            <p>
+              Reach out to our concierge team for group travel, corporate
+              partnerships, or last-minute changes.
+            </p>
+          </div>
+          <div class="contact-details">
+            <div>
+              <h4>Call</h4>
+              <p>(800) 555-2024</p>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>support@skywayparking.com</p>
+            </div>
+            <div>
+              <h4>Text Shuttle</h4>
+              <p>(800) 555-2044</p>
+            </div>
+          </div>
+          <a class="button" href="mailto:support@skywayparking.com">Contact Support</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h3>Skyway Parking</h3>
+        <p>Airport parking reservations made effortless.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="#reservation">Reserve</a>
+      </div>
+      <p class="footer-note">© 2024 Skyway Parking. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
