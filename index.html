@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skyway Parking | DTW Airport Parking Reservations</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/skyway-logo.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#">
+          <img src="assets/skyway-logo.svg" alt="Skyway Parking" />
+        </a>
+        <div class="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#reservation">Reservations</a>
+          <a href="#amenities">Amenities</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <button class="nav-cta">My Reservation</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="overview">
+        <div class="hero-content">
+          <p class="eyebrow">DTW AIRPORT PARKING</p>
+          <h1>Secure, Fast, and Friendly Parking at Detroit Metro Airport.</h1>
+          <p>
+            Skyway Parking offers premium off-airport parking with 24/7 shuttle service to
+            Detroit Metropolitan Wayne County Airport (DTW). Reserve your spot in minutes.
+          </p>
+          <div class="hero-actions">
+            <button class="primary">Reserve Now</button>
+            <button class="secondary">View Parking Map</button>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <strong>7 min</strong>
+              <span>Average shuttle ride</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>Staffed and monitored</span>
+            </div>
+            <div>
+              <strong>DTW</strong>
+              <span>Only airport served</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/skyway-logo.svg" alt="Skyway Parking logo" />
+          <div>
+            <h3>Skyway Parking</h3>
+            <p>8501 Inkster Rd, Taylor, MI 48180</p>
+            <p>Call: (313) 254-2699</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reservation" id="reservation">
+        <div class="section-title">
+          <img src="assets/skyway-logo.svg" alt="Skyway Parking" />
+          <div>
+            <p class="eyebrow">RESERVE YOUR SPACE</p>
+            <h2>DTW Reservation Questionnaire</h2>
+            <p>Complete the required details to confirm your airport parking reservation.</p>
+          </div>
+        </div>
+
+        <div class="reservation-layout">
+          <form class="reservation-form">
+            <div class="form-section">
+              <h3>Traveler Information</h3>
+              <div class="field-grid">
+                <label>
+                  Full Name
+                  <input type="text" name="fullName" placeholder="Jane Doe" required />
+                </label>
+                <label>
+                  Phone Number
+                  <input type="tel" name="phone" placeholder="(313) 555-0123" required />
+                </label>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>Vehicle Details</h3>
+              <div class="field-grid">
+                <label>
+                  Car Make & Model
+                  <input type="text" name="carModel" placeholder="Ford Explorer" required />
+                </label>
+                <label>
+                  Model Year
+                  <input type="number" name="carYear" placeholder="2022" min="1990" max="2035" required />
+                </label>
+                <label>
+                  License Plate
+                  <input type="text" name="plate" placeholder="ABC-1234" required />
+                </label>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>Reservation Dates & Times</h3>
+              <div class="field-grid">
+                <label>
+                  Airport (DTW only)
+                  <select name="airport" required>
+                    <option value="DTW">Detroit Metro (DTW)</option>
+                  </select>
+                </label>
+                <label>
+                  Check-in Date
+                  <input type="date" name="checkinDate" required />
+                </label>
+                <label>
+                  Check-in Time
+                  <input type="time" name="checkinTime" required />
+                </label>
+                <label>
+                  Check-out Date
+                  <input type="date" name="checkoutDate" required />
+                </label>
+                <label>
+                  Check-out Time
+                  <input type="time" name="checkoutTime" required />
+                </label>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>Signature & Confirmation</h3>
+              <div class="field-grid">
+                <label>
+                  Signature (Type Full Name)
+                  <input type="text" name="signature" placeholder="Jane Doe" required />
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" required />
+                  I confirm the reservation details and agree to Skyway Parking terms.
+                </label>
+              </div>
+            </div>
+
+            <button class="primary" type="submit">Confirm Reservation</button>
+          </form>
+
+          <aside class="reservation-summary">
+            <h3>Reservation Overview</h3>
+            <div class="summary-card">
+              <h4>Skyway Parking - DTW</h4>
+              <p>24/7 monitored lot with covered & open parking options.</p>
+              <ul>
+                <li>Continuous shuttle service to DTW terminals</li>
+                <li>Secure fenced lot with lighting</li>
+                <li>On-site staff for assistance</li>
+              </ul>
+              <button class="secondary">Print Sample Receipt</button>
+            </div>
+            <div class="summary-card">
+              <h4>Need Help?</h4>
+              <p>Our team is available around the clock to update or manage your reservation.</p>
+              <p><strong>(313) 254-2699</strong></p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="amenities" id="amenities">
+        <div class="section-title">
+          <img src="assets/skyway-logo.svg" alt="Skyway Parking" />
+          <div>
+            <p class="eyebrow">WHY SKYWAY</p>
+            <h2>Everything you expect from a top airport parking provider.</h2>
+          </div>
+        </div>
+        <div class="amenities-grid">
+          <article>
+            <h3>Flight-Friendly Timing</h3>
+            <p>Arrive early or late—Skyway Parking operates 24/7 with on-demand shuttles.</p>
+          </article>
+          <article>
+            <h3>Bag Assist & Customer Care</h3>
+            <p>Friendly attendants help with bags and directions every step of the way.</p>
+          </article>
+          <article>
+            <h3>Security You Can Trust</h3>
+            <p>Monitored lot with fencing, cameras, and well-lit parking aisles.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="section-title">
+          <img src="assets/skyway-logo.svg" alt="Skyway Parking" />
+          <div>
+            <p class="eyebrow">FAQ</p>
+            <h2>Common reservation questions.</h2>
+          </div>
+        </div>
+        <div class="faq-grid">
+          <div>
+            <h4>Which airport do you serve?</h4>
+            <p>Skyway Parking exclusively serves Detroit Metropolitan Wayne County Airport (DTW).</p>
+          </div>
+          <div>
+            <h4>How early should I arrive?</h4>
+            <p>We recommend arriving at least 20 minutes before your desired terminal drop-off time.</p>
+          </div>
+          <div>
+            <h4>Can I update my reservation?</h4>
+            <p>Yes. Call our 24/7 team and we will adjust your reservation dates and times.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img src="assets/skyway-logo.svg" alt="Skyway Parking" />
+        <p>Skyway Parking at DTW - Reliable airport parking with VIP care.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Location</h4>
+          <p>8501 Inkster Rd, Taylor, MI 48180</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>(313) 254-2699</p>
+          <p>support@skywayparking.com</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
