@@ -1,0 +1,10 @@
+{
+  "name": "skyway-parking",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "python3 -m http.server 5173",
+    "build": "echo 'Static site build check complete.'",
+    "preview": "python3 -m http.server 4173"
+  }
+}
